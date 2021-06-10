@@ -1,0 +1,178 @@
+
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+%
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+\usepackage[cmex10]{amsmath}
+\usepackage{siunitx}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+\usepackage{txfonts}
+\usepackage{stfloats}
+
+\usepackage{steinmetz}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} % loads  TikZ and tkz-base
+\usetikzlibrary{calc,math}
+\usetikzlibrary{fadings}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+  %optionally (for landscape tables embedded in another document): %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+%
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\abs}[1]{\lvert#1\rvert} 
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{ASSIGNMENT-5}
+\author{R.YAMINI}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+%
+\section{QUESTION NO-2.11}
+\item If $(x-a)^2+(y-b)^2 = c^2$, for some $c>0$ then prove that $\frac{(1+(y_{1})^2)^\frac{3}{2}}{y_{2}}$ is a constant independent of $a$ and $b$.
+%
+
+%
+\section{Solution}
+Given that $(x-a)^2+(y-b)^2 = c^2$, for some $c>0$.In order to prove $\frac{(1+(y_{1})^2)^\frac{3}{2}}{y_{2}}$ is a constant independent of $a$ and $b$.
+Consider,
+\begin{align}
+    (x-a)^2+(y-b)^2 = c^2
+\end{align}
+Now differentiating equation (2.0.1) on both sides with respect to $x$  we get
+\begin{align}
+    2(x-a)+2(y-b)\frac{dy}{dx} = 0
+\\ 
+y_{1} = \frac{dy}{dx} = \frac{a-x}{y-b}
+\end{align}
+Differentiating (2.0.3) again with respect to $x$ we have,
+\begin{align}
+    \frac{d^2y}{dx^2}= \frac{-(y-b)-(a-x)y_{1}}{(y-b)^2}
+    \\
+    y_{2} = \frac{-(y-b)-(a-x)\brak{\frac{a-x}{y-b}}}{(y-b)^2}
+    \\
+    = \frac{-(x-a)^2-(y-b)^2}{(y-b)^3}
+    \\
+    = -\brak{\frac{(x-a)^2+(y-b)^2}{(y-b)^3}}
+    \\
+   y_{2}= \frac{-c^2}{(y-b)^3}
+\end{align}
+
+Now substituting the values of $y_{1}$ from equation (2.0.3) and $y_{2}$ from equation (2.0.8) in 
+$\frac{(1+(y_{1})^2)^\frac{3}{2}}{y_{2}}$
+\begin{align}
+\frac{(1+(y_{1})^2)^\frac{3}{2}}{y_{2}}
+&= \frac{(1+\frac{(x-a)^2}{(y-b)^2})^\frac{3}{2}}{\frac{-c^2}{(y-b)^3}}
+\\
+&= \frac{((x-a)^2+(y-b)^2)^\frac{3}{2}}{(y-b)^3}\brak{\frac{-(y-b)^3}{c^2}}
+\end{align}
+From equation (2.0.1), we get
+\begin{align}
+&= \frac{-(c^2)^\frac{3}{2}}{c^2} 
+\\
+&= -c  
+\end{align}
+Hence, we have 
+$ \frac{(1+(y_{1})^2)^\frac{3}{2}}{y_{2}}= -c$.
+\\
+Therefore, we have proved that, if $(x-a)^2+(y-b)^2 = c^2$, for some $c>0$ then $\frac{(1+(y_{1})^2)^\frac{3}{2}}{y_{2}}$ is a constant independent of $a$ and $b$.
+\end{document}
